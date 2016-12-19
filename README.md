@@ -8,7 +8,7 @@ CSS styles from multiple sources that conflict with one another.
 When you include a CSS file, you can specify the namespace you want it to live in like
 this:
 ```html
-<link rel="stylesheet" type="text/css" namespace="bootstrap" href="style/bootstrap.css">
+<link rel="stylesheet" type="text/css" data-namespace="bootstrap" href="style/bootstrap.css">
 ```
 
 This will cause any CSS classes defined in `bootstrap.css` to be suppressed _unless_
@@ -17,7 +17,7 @@ want to "use" your custom `boostrap` namespace. You can enable the `bootstrap` n
 you just created from your document markup as follows:
 ```html
 <!-- code out here cannot use bootstrap styling -->
-<div namespace="bootstrap">
+<div data-namespace="bootstrap">
   <!-- code within this block can use bootstrap styling -->
 </div>
 <!-- code out here also cannot use bootstrap styling -->
