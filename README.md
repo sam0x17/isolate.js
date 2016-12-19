@@ -26,16 +26,16 @@ you just created from your document markup as follows:
 You can also enable/disable a namespace from within JavaScript:
 ```JavaScript
 // bootstrap styles not visible
-using('bootstrap')
+uses('bootstrap')
 // bootstrap styles visible
-end_using()
+end_uses()
 // bootstrap styles not visible
 ```
 
 Alternatively, you can do this callback-style:
 ```JavaScript
 // bootstrap styles not visible
-using('bootstrap', function() {
+uses('bootstrap', function() {
   // bootstrap styles visible
 })
 // bootstrap styles not visible
